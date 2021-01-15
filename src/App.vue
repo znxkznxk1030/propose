@@ -1,20 +1,18 @@
 <template>
 <div id="app">
-    <main-page />
-    <first-page v-if="false"/>
-    <!-- <router-view/> -->
+    <!-- <main-page />
+    <first-page v-if="false"/> -->
+    <router-view/>
 </div>
 </template>
 
 <script>
-import FirstPage from './components/FirstPage.vue'
-import MainPage from './components/MainPage.vue'
+// import MainPage from './components/MainPage.vue'
 
 export default {
     name: 'App',
     components: {
-        MainPage,
-        FirstPage
+        // MainPage
     }
 }
 </script>

@@ -45,15 +45,12 @@
                       Hyejung & Youngsoo
                     </h2>
                     <p class="u-text u-text-3">
-                      When it comes to sunny days, nothing beats a T-shirt dress
-                      for throw-on-and-go simplicity. We've given ours extra
-                      oomph with a sophisticated boat neck so it'll look just as
-                      good on the beach as at weekend brunch with the girls.
+                      우리의 알콩달콩 했던 소중한 추억을 담은 사진을 보관하고 싶어서 만든 공간입니다.
                     </p>
                     <a
-                      href="https://nicepage.com/website-templates"
+                      @click.prevent="$router.push({ path: 'photos' })"
                       class="u-active-none u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-none u-none u-btn-1"
-                      >read more</a
+                      >see more</a
                     >
                   </div>
                 </div>
@@ -62,7 +59,7 @@
           </div>
         </div>
       </div>
-      <carousel :no="2" :title="'귀여운 우리 둘'" :text="'blah blah'"/>
+      <carousel :no="2" :title="'귀여운 우리 둘'" :text="'그리고 혜정이게 해주고 싶은 이야기...'"/>
     </div>
     <a
       class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-body-color u-block-06e4-3"
@@ -123,6 +120,7 @@ export default {
     name: "MainPage",
     components: {
         Carousel
-    }
+    },
+
 };
 </script>

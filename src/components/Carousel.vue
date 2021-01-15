@@ -29,10 +29,9 @@
                   {{ text }}
                 </p>
                 <a
-                  href="https://nicepage.com/website-builder"
-                  @click.prevent=""
+                  href="https://youtu.be/MqNJnDaLaco"
                   class="u-active-none u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-none u-none u-btn-1"
-                  >read more</a
+                  >들어줄래?</a
                 >
               </div>
             </div>
