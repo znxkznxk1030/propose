@@ -48,7 +48,7 @@
                       우리의 알콩달콩 했던 소중한 추억을 담은 사진을 보관하고 싶어서 만든 공간입니다.
                     </p>
                     <a
-                      @click.prevent="$router.push({ path: 'photos' })"
+                      @click.prevent="$router.push({ path: '/photos' })"
                       class="u-active-none u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-none u-none u-btn-1"
                       >see more</a
                     >
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <carousel :no="2" :title="'귀여운 우리 둘'" :text="'그리고 혜정이게 해주고 싶은 이야기...'"/>
+      <carousel :no="2" :title="'귀여운 우리 둘의 공간'" :text="'그리고 혜정이게 해주고 싶은 이야기...'" :subText="'들어줄래?'"/>
     </div>
     <a
       class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-body-color u-block-06e4-3"

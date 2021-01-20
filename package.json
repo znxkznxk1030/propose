@@ -13,7 +13,8 @@
     "vue": "^2.6.11",
     "vue-gallery": "^2.0.1",
     "vue-router": "^3.4.9",
-    "vue-silentbox": "^2.3.0"
+    "vue-silentbox": "^2.3.0",
+    "webkul-micron": "^1.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

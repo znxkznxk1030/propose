@@ -29,9 +29,9 @@
                   {{ text }}
                 </p>
                 <a
-                  href="https://youtu.be/MqNJnDaLaco"
+                  @click.prevent="$emit('click-direct', no)"
                   class="u-active-none u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-none u-none u-btn-1"
-                  >들어줄래?</a
+                  >{{ subText }}</a
                 >
               </div>
             </div>
@@ -61,6 +61,10 @@ export default {
       type: Number,
       default: 0,
     },
+    subText: {
+      type: String,
+      default: null,
+    }
   },
 };
 </script>

@@ -3,18 +3,25 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 
 // import '@morioh/v-lightbox/dist/lightbox.css'
-import Lightbox from '@morioh/v-lightbox'
 
-import MainPage from './components/MainPage.vue'
+import FirstPage from './components/FirstPage.vue'
+// import MainPage from './components/MainPage.vue'
 import Gallery from './components/Gallery.vue'
-import VueSilentbox from 'vue-silentbox'
 
-// global register
+
+import VueSilentbox from 'vue-silentbox'
+import VueCarousel from 'vue-carousel';
+// import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
+// import './fullpage.scrollHorizontally.min' // Optional. When using fullpage extensions
+import VueFullPage from 'vue-fullpage.js'
+
+Vue.use(VueFullPage);
+
+Vue.use(VueCarousel);
 Vue.use(VueSilentbox)
-Vue.use(Lightbox);
 
 const routes = [
-    { path: '/', component: MainPage },
+    { path: '/', component: FirstPage },
     { path: '/photos', component: Gallery },
 ]
 
