@@ -1,10 +1,14 @@
 <template>
   <div>
-    <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section">
+    <carousel
+      :per-page="1"
+      :navigate-to="someLocalProperty"
+      :mouse-drag="false"
+    >
+      <slide>
         <counter-page />
-      </div>
-      <div class="section">
+      </slide>
+      <slide>
         <page
           :no="1"
           :title="'Hyejung & Youngsoo'"
@@ -12,8 +16,8 @@
           :subText="'See More'"
           v-on:click-direct="$router.push({ path: '/photos' })"
         />
-      </div>
-      <div class="section">
+      </slide>
+      <slide>
         <page
           :no="2"
           :title="'언제나 사랑스러운 혜정이에게'"
@@ -21,15 +25,16 @@
           :subText="'See More'"
           v-on:click-direct="openYoutube"
         />
-      </div>
-      <div class="section">
+      </slide>
+      <slide>
         <contribute/>
-      </div>
-    </full-page>
+      </slide>
+    </carousel>
+    <!-- <div id="disqus_thread"></div> -->
   </div>
 </template>
 <script>
-// import { Carousel, Slide } from "vue-carousel";
+import { Carousel, Slide } from "vue-carousel";
 import Page from "./Carousel.vue";
 import CounterPage from "./Counter";
 import Contribute from "./Contribute";
@@ -37,8 +42,8 @@ import Contribute from "./Contribute";
 export default {
   name: "FirstPage",
   components: {
-    // Carousel,
-    // Slide,
+    Carousel,
+    Slide,
     Page,
     CounterPage,
     Contribute

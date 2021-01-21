@@ -143,6 +143,18 @@
     }
 }
 
+@media (max-width: 420px) {
+    .u-section-1 {
+        width: 100vw;
+    }
+    .u-section-2 {
+        width: 100vw;
+    }
+    u-section-1-2 {
+        width: 100vw;
+    }
+}
+
 @media (max-width: 575px) {
     .u-section-1 .u-group-1 {
         margin-top: 20px;

@@ -11,11 +11,15 @@ import Gallery from './components/Gallery.vue'
 
 import VueSilentbox from 'vue-silentbox'
 import VueCarousel from 'vue-carousel';
+import Embed from 'v-video-embed'
+
+// global register
+Vue.use(Embed);
 // import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
 // import './fullpage.scrollHorizontally.min' // Optional. When using fullpage extensions
-import VueFullPage from 'vue-fullpage.js'
+// import VueFullPage from 'vue-fullpage.js'
 
-Vue.use(VueFullPage);
+// Vue.use(VueFullPage);
 
 Vue.use(VueCarousel);
 Vue.use(VueSilentbox)

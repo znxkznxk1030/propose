@@ -10,6 +10,7 @@
   "dependencies": {
     "@morioh/v-lightbox": "^1.0.3",
     "core-js": "^3.6.5",
+    "v-video-embed": "^1.0.8",
     "vue": "^2.6.11",
     "vue-gallery": "^2.0.1",
     "vue-router": "^3.4.9",
